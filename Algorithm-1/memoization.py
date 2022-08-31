@@ -7,13 +7,13 @@ def fibo(n):
 
 
 # 메모이제이션 기법을 사용한 피보나치수열 알고리즘
-def fibo_memo(n):
-    grobal fibo_memo
-    if n >= len(memo)
-    memo.append(fibo(n-1) +  fibo(n-2))
-    return memo[n]
-
-memo=[0,1]
+def fib(n):
+    fibList=[1, 1]
+    if n==1 or n==2:
+        return 1
+    for i in range(2,n):
+        fibList.append( fibList[i-1] + fibList[i-2] )
+    return fibList
 
 
 
